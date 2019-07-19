@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+hello world
+</view>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo1">登录获取用户信息1</button>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo2">登录获取用户信息2</button>
