@@ -5,7 +5,7 @@
 
 #### 如何使用:
 
-    1.在后端Controller里修改微信小程序的APPID, APP_SECRET.
+    1.在后端Controller里修改微信小程序的APPID, APP_SECRET, 配置一下application.yml.
     
     2.小程序也修改AppId.
     
