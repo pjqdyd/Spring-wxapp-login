@@ -4,9 +4,9 @@ import com.alibaba.fastjson.JSONObject;
 import com.pjqdyd.utils.AesCbcUtil;
 import com.pjqdyd.utils.WxHttpUtil;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -23,7 +23,7 @@ import java.util.Map;
 public class WxLoginControlller {
 
     public static final String APPID = "wx01b188dd7220f49d"; //申请小程序的AppId
-    public static final String APP_SECRET = "d4149fa92186ef4f5ce5c1114fd75f78"; //生成的AppSecret
+    public static final String APP_SECRET = "99fsfcb499ad20767adfd33548152"; //生成的AppSecret
 
     //请求微信后端的地址
     public static final String AUTH_URL = "https://api.weixin.qq.com/sns/jscode2session?appid={appid}&secret={secret}&js_code={js_code}&grant_type={grant_type}";
@@ -36,9 +36,9 @@ public class WxLoginControlller {
      * @return
      */
     @PostMapping("/login")
-    public String wxLogin(@Param("code") String code,
-                          @Param("iv") String iv,
-                          @Param("encryptedData") String encryptedData) throws Exception{
+    public String wxLogin(@RequestParam("code") String code,
+                          @RequestParam("iv") String iv,
+                          @RequestParam("encryptedData") String encryptedData) throws Exception{
 
         if (StringUtils.isBlank(code) || StringUtils.isBlank(iv) || StringUtils.isBlank(encryptedData)){
             return "失败-参数不能为空";

@@ -1,7 +1,7 @@
 //app.js
 App({
 
-  serverUrl: "http://192.168.0.111:8080",
+  serverUrl: "http://localhost:8080",
   userInfo: null,
 
   setGlobalUserInfo: function (user) {
