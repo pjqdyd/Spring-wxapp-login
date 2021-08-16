@@ -30,7 +30,7 @@
    
    1. 已修复bug [issse #1](https://github.com/pjqdyd/Spring-wxapp-login/issues/1), 之前已经遇到过此类问题且已解决，但是仓库忘了更新...
 
-   2. 可以通过官方新的api: wx.getUserProfile 获取用户的信息.
+   2. 可以通过官方新的api: wx.getUserProfile 获取用户的信息 (也要注意提前wx.login获取code).
 
    3. 建议大家使用[Wechat-Group/WxJava 微信开发 Java SDK](https://github.com/Wechat-Group/WxJava) 这个官方Java Sdk来进行开发, 配置
       简单，支持多小程序appid, api都是经过封装成service的非常好用.
