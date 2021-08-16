@@ -106,8 +106,8 @@ Page({
         country: userInfo.country,
         avatarUrl: userInfo.avatarUrl,
 
-        userId: app.getGlobalUserInfo().userId,
-        token: app.getGlobalUserInfo().token
+        // userId: app.getGlobalUserInfo().userId,
+        // token: app.getGlobalUserInfo().token
       },
       success: (result) => {
         console.log(result);
