@@ -28,7 +28,7 @@
 
    (迟到的更新)
    
-   1. 已修复bug [issse #1](https://github.com/pjqdyd/Spring-wxapp-login/issues/1), 之前已经遇到过此类问题且已解决，但是仓库忘了更新...
+   1. 已修复bug [issue #1](https://github.com/pjqdyd/Spring-wxapp-login/issues/1), 之前已经遇到过此类问题且已解决，但是仓库忘了更新...
 
    2. 可以通过官方新的api: wx.getUserProfile 获取用户的信息 (也要注意提前wx.login获取code).
 
