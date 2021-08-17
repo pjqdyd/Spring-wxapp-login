@@ -7,9 +7,9 @@
 
     1.在后端Controller里修改成你的微信小程序的APPID, APP_SECRET.
     
-    2.小程序也修改成你的小程序AppId.
+    2.小程序也修改成你的小程序AppId (注意：微信开发者工具的 '增强编译' 和 '不校验https' 要勾选上).
     
-    3.修改小程序pages/index/index.js中的wx.request方法的url的ip为后端启动ip地址 (默认laocalhost).
+    3.修改小程序pages/index/index.js中的wx.request方法的url的ip为后端启动ip地址 (默认localhost).
     
     4.运行后端项目, 小程序点击获取用户信息按钮, 后端控制台打印用户信息.
     
